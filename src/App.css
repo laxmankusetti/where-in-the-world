@@ -1,0 +1,326 @@
+@import url('bootstrap/dist/css/bootstrap.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,300;0,6..12,600;1,6..12,800&display=swap');
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.home-page{
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  padding: 0 20px;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(0, 0%, 98%);
+}
+
+.home-page.dark-mode{
+  background-color: hsl(207, 26%, 17%);
+  color: white;
+}
+
+.home-page.dark-mode .country-link{
+  color: white;
+}
+
+.home-page .country-link{
+  text-decoration: none;
+  color: black;
+}
+
+.home-page.dark-mode .country-card{
+  box-shadow: 0 0 0 hsl(209, 23%, 22%);
+  background-color: hsl(209, 23%, 22%);
+}
+
+.country-card{
+  width: 200px;
+  height: 250px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px hsl(0, 0%, 90%);
+}
+
+.country-card .country-card-image-container{
+  width: 100%;
+  height: 40%;
+}
+
+.country-card .country-card-image-container .country-card-image{
+  width: 100%;
+  height: 100%;
+}
+
+.country-card .country-card-details-container{
+  width: 100%;
+  height: 60%;
+  padding: 20px;
+}
+
+.country-card .country-card-details-container p{
+  height: 5px;
+  font-size: 0.8em;
+  font-weight: 600;
+}
+
+.country-card .country-card-details-container .country-card-name{
+  font-weight: 900;
+  margin: 25px 0px;
+}
+
+span.population, span.region, span.capital{
+  color:  hsl(0, 0%, 52%);
+}
+.home-page.dark-mode .population, .home-page.dark-mode span.region, .home-page.dark-mode span.capital{
+  color:  hsl(0, 0%, 75%);
+}
+
+.home-page-header{
+  width: 100vw;
+}
+
+.home-page-header.dark-mode{
+  background-color: hsl(209, 23%, 22%);
+  color: white;
+}
+
+.logo-mode-container{
+  width: 100%;
+  padding: 20px 50px;
+  box-shadow: 0 0 10px hsl(0, 0%, 90%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.home-page.dark-mode .logo-mode-container{
+  box-shadow: 0 0 10px hsl(209, 23%, 22%);
+  color: white;
+}
+
+.home-page.dark-mode .input-container input{
+  background-color: hsl(209, 23%, 22%);
+  color: white;
+  box-shadow: 0 0 0px hsl(209, 23%, 22%);
+}
+
+.input-container{
+  width: 30%;
+  height: 45px;
+  position: relative;
+}
+
+.input-container input{
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  box-shadow: 0 0 10px hsl(0, 0%, 90%);
+  padding: 0 50px;
+  font-size: 0.9em;
+  color: hsl(0, 0%, 52%);
+}
+
+.input-container .magnifying-glass{
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+
+.select-input-container select{
+  padding: 10px 20px;
+  box-shadow: 0 0 10px hsl(0, 0%, 90%);
+  border: none;
+  font-size: 0.9em;
+  font-weight: 700;
+  outline: none;
+}
+
+.home-page.dark-mode .select-input-container select{
+  box-shadow: 0 0 0px hsl(209, 23%, 22%);
+  background-color: hsl(209, 23%, 22%);
+  color: white;
+}
+
+.search-select-container{
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px auto;
+}
+
+.back-btn{
+  width: max-content;
+  height: max-content;
+  text-decoration: none;
+  color: hsl(0, 0%, 52%);
+  padding: 10px 25px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px hsl(0, 0%, 90%);
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+}
+
+.country-page.dark-mode .back-btn{
+  color: hsl(0, 0%, 60%);
+  box-shadow: 0 0 5px hsl(209, 23%, 17%);
+  background-color: hsl(207, 26%, 22%);
+}
+
+.country-page{
+  padding: 75px 50px;
+}
+
+.country-image-container{
+  width: 350px;
+  height: 250px;
+  margin: 30px 0;
+}
+.country-image-container img{
+  width: 100%;
+  height: 100%;
+}
+
+.country-details .country-brief p{
+  font-size: 0.9em;
+  font-weight: 800;
+}
+
+.country-details .country-brief p span{
+  font-weight: 200;
+  color: hsl(0, 0%, 52%);
+}
+
+.country-details .country-brief{
+  display: flex;
+  flex-direction: column;
+  width: 35vw;
+  height: 200px;
+  flex-wrap: wrap;
+}
+
+.country-details .country-name{
+  margin-bottom: 25px;
+  font-weight: 900;
+}
+
+.country-container{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.border-countries-heading span{
+  padding: 5px 15px;
+  background-color: hsl(0, 0%, 100%);
+  box-shadow: 0 0 5px hsl(0, 0%, 90%);
+  font-size: 0.8em;
+  color: hsl(0, 0%, 52%);
+  margin: 0 10px;
+}
+
+.country-page.dark-mode .border-countries-heading span{
+  background-color: hsl(207, 26%, 22%);
+  box-shadow: 0 0 5px hsl(209, 23%, 17%);
+  color: hsl(0, 0%, 72%);
+}
+
+.mode-title{
+  cursor: pointer;
+}
+
+.country-page.dark-mode{
+  background-color: hsl(207, 26%, 17%);
+  color: white;
+}
+
+.country-page{
+  background-color: white;
+}
+
+
+@media screen and (max-width: 500px){
+
+  .home-page{
+    gap: 50px;
+    padding: 0 10px;
+  }
+
+  .country-card{
+    width: 80vw;
+    height: 60vh;
+  }
+
+  .country-card .country-card-details-container p{
+    height: 30px;
+    font-size: 1.5em;
+    font-weight: 600;
+  }
+  
+  .country-card .country-card-details-container .country-card-name{
+    margin: 15px 0px;
+  }
+
+  .logo-mode-container{
+    padding: 20px;
+  }
+
+  .input-container{
+    width: 90%;
+    height: 45px;
+    position: relative;
+  }
+  
+  .select-input-container select{
+    padding: 10px 35px;
+  }
+
+  .search-select-container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100vw;
+    align-items: flex-start;
+  }
+
+  .country-container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .back-btn{
+    padding: 10px 35px;
+  }
+  .country-page{
+    padding: 50px 20px;
+  }
+  
+  .country-image-container{
+    width: 80vw;
+    height: 40vh;
+    margin: 20px 0;
+  }
+  
+  .country-details .country-brief p{
+    font-size: 1em;
+    font-weight: 800;
+  }
+  
+  .country-details .country-brief{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+  }
+  
+}
